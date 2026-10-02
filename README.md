@@ -41,9 +41,9 @@ Os cadastros ficam armazenados em arrays durante a execução. Ao encerrar o pro
 
 É necessário ter o **Node.js** instalado, com suporte a `node:readline/promises`.
 
-1. Baixe os arquivos e coloque-os na mesma pasta.
-2. Caso os arquivos tenham sufixos de download, como `(1)` ou `(8)`, renomeie-os conforme a tabela acima. Mantenha as letras maiúsculas e minúsculas dos nomes.
-3. Abra o terminal na pasta do projeto e execute:
+1. Baixe os arquivos ou clone o repositório.
+2. Abra o terminal na pasta do projeto e execute:
+
 
 ```bash
 node Index.js
@@ -72,10 +72,4 @@ if (salarioInfo < 1500) {
 
 O `GestorAcademico` captura a exceção no `catch` e encaminha `erro.message` ao método `traduzirErro()`, que mostra uma mensagem compreensível para o usuário. O cadastro com erro não é adicionado ao array, e o menu continua disponível.
 
-Entre as regras implementadas estão a faixa de idade de 14 a 120 anos, o salário mínimo de R$ 1.500,00 e a presença de `@` no e-mail. A verificação de CPF é básica e não calcula os dígitos verificadores.
-
-## Estado do projeto
-
-Este é um projeto educacional em desenvolvimento. A versão atual ainda possui pontos para evolução, como padronizar o CPF como texto no cadastro e na busca, aprimorar as validações e impedir o cadastro quando a opção de titulação for inválida. A diferença atual entre CPF numérico e textual pode prejudicar a validação e a busca de professores.
-
-Não há testes automatizados implementados.
+Entre as regras implementadas estão a faixa de idade de 14 a 120 anos, o salário mínimo de R$ 1.500,00 e a presença de `@` no e-mail.
