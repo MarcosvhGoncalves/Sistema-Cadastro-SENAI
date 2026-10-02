@@ -29,7 +29,7 @@ const rl = readline.createInterface({ input, output });
         gestao.cadastrarAluno(nomeAluno, cpfAluno, emailAluno, idadeAluno, cursoAluno);
         break;
       case "2":
-        const cpfProfessor = await rl.question("Digite o CPF do professor (apenas números): ");
+        const cpfProfessor = parseInt(await rl.question("Digite o CPF do professor (apenas números): "));
         const nomeProfessor = await rl.question("Digite o nome do professor: ");
         const emailProfessor = await rl.question("Digite o e-mail do professor: ");
         const salarioProfessor = parseFloat(await rl.question("Digite o salário do professor: "));
